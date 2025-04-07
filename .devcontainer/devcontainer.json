@@ -1,6 +1,6 @@
 {
     "name": "Sports AI Analyzer",
-    "image": "mcr.microsoft.com/devcontainers/python:3.9",
+    "image": "mcr.microsoft.com/devcontainers/python:3.11",
     "customizations": {
         "vscode": {
             "extensions": [
@@ -8,7 +8,7 @@
             ]
         }
     },
-    "postCreateCommand": "pip install -r requirements.txt",
+    "postCreateCommand": "pip install --upgrade pip && pip install -r requirements.txt",
     "forwardPorts": [],
     "portsAttributes": {},
     "remoteUser": "vscode"
