@@ -1,0 +1,2 @@
+2025-04-09 05:15:27,919 - WARNING - Error loading config: FileNotFoundError - [Errno 2] No such file or directory: 'config.yaml'. Using defaults
+2025-04-09 05:15:28,267 - ERROR - Error fetching game IDs for date 2024-04-07: 404 Client Error: Resource Not Found for url: https://api.sportsdata.io/v8/nba/schedules/2024-04-07/schedule.json?key=SPORTSRADAR_API_KEY
