@@ -1,2 +1,7 @@
+<<<<<<< HEAD
 sportsradar_api_key: "1J94Fxh0G995h9eevjvVnn5cRR466x80Ttp7evRs"
 weather_api_key: "47d6df14689142fcd59b18eae04a24d9"
+=======
+sportsradar_api_key: "your_actual_sportsradar_key"
+weather_api_key: "your_actual_openweathermap_key"
+>>>>>>> 2f4f5df17a7c2ca9f8bdca372baa98b081312331
