@@ -26,35 +26,6 @@ class SportsAIAnalyzer:
         self.game_history: pd.DataFrame = pd.DataFrame()
         self.model = XGBClassifier(use_label_encoder=False, eval_metric='logloss')
         self.scaler = StandardScaler()
-
-import pandas as pd
-import numpy as np
-from sklearn.model_selection import train_test_split
-from xgboost import XGBClassifier
-from sklearn.preprocessing import StandardScaler
-import logging
-import requests
-import json
-import time
-import yaml
-from cachetools import TTLCache
-from typing import Dict, Optional
-
-logging.basicConfig(
-    level=logging.INFO,
-    format='%(asctime)s - %(levelname)s - %(message)s',
-    filename='sports_ai.log'
-)
-
-class SportsAIAnalyzer:
-    def __init__(self, sport: str = "basketball", config_path: str = "config.yaml"):
-        self.sport = sport.lower()
-        self.config = self._load_config(config_path)
-        self.player_data: Dict = {}
-        self.team_data: Dict = {}
-        self.game_history: pd.DataFrame = pd.DataFrame()
-        self.model = XGBClassifier(use_label_encoder=False, eval_metric='logloss')
-        self.scaler = StandardScaler()
         
         self.sportsradar_api_key = self.config.get("sportsradar_api_key", "SPORTSRADAR_API_KEY")
         self.weather_api_key = self.config.get("weather_api_key", "WEATHER_API_KEY")
